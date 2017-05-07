@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     MapFragment mMapFragment;
     LocationListener mLocationListener;
     LocationManager mLocationManager;
-    private GoogleMap.OnMapClickListener mCustomMapClickListener;
+    GoogleMap.OnMapClickListener mCustomMapClickListener;
     String imeLokacije;
     ImageButton ibSlikaj;
     Intent kamera = new Intent();
@@ -164,7 +164,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 != PackageManager.PERMISSION_GRANTED){
             return;
         }
-        this.mGoogleMap.setMyLocationEnabled(true);
+        //this.mGoogleMap.setMyLocationEnabled(true);
     }
 
     private void startTracking() {
